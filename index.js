@@ -17,6 +17,9 @@ module.exports = function (opts) {
 
     var reset = new Forgot(opts);
 
+
+    console.log(opts);
+
     var self = function (email, cb) {
         var session = reset.generate();
         if (!session) return;
